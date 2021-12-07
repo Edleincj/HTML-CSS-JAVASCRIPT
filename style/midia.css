@@ -1,0 +1,21 @@
+@charset "UTF-8";
+div#tv-radio{
+    width:300px;
+    height:1000px;
+    margin:auto;
+    background: url(../img/tv-radio.png) no-repeat;
+}
+
+p{
+    display: flexbox;
+    text-align: justify;
+    margin: 0px;
+}
+iframe{
+    display:inline-block;
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    box-shadow: 20px 20px 20px #606060;
+    background-position: 50% 50%;
+}

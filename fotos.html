@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Glass</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/fotos.css" />
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+        <hgroup>
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando.</h2>
+        </hgroup> 
+         <img id="icone" src="./img/camera.png" alt="Fotos do Google Glass">  
+        
+        <nav id="menu">
+            <h1> Menu Principal</h1>
+            <ul type="disc"> 
+                <li onmouseover="mudaFoto('./img/home.png')" onmouseout="mudaFoto('./img/camera.png')"><a href="./index.html">Home</a></li>
+                <li onmouseover="mudaFoto('./img/especificacoes.png')" onmouseout="mudaFoto('./img/camera.png')"><a href="./especificacoes.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('./img/camera.png')" onmouseout="mudaFoto('./img/camera.png')"><a href="./fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('./img/midia.png')" onmouseout="mudaFoto('./img/camera.png')"><a href="./multimidias.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('./img/fale.png')" onmouseout="mudaFoto('./img/camera.png')"><a href="./contato.html">Fale Conosco</a></li>
+            </ul> 
+        </nav>    
+        </header>
+
+        <section id="corpo-full"> 
+            <article id="noticia-principal">  
+              <header id="cabecalho-artigo">
+                  <hgroup>
+                      <h3> Glass > &nbsp; Fotos</h3>
+                      <h1> Galeria de imagens do Google Glass.</h1>
+                      <h2> Por Edlein Chaves </h2>
+                      <h3 class="dir"> Atualizado em 06/12/2021</h3>
+                  </hgroup>
+              </header> 
+             <p>O Google Glass já foi desmontado, estudado e até mesmo foi tomar um banho, mas esta é a primeira vez que os óculos inteligentes vão para uma máquina de raio x. Um usuário do Google+ postou diversas fotos que mostram as entranhas no interior do dispositivo, criando imagens interessantes de olhar e apreciar.
+             Pisque para tirar fotos com o Google Glass
+             Ainda há poucos apps para o Google Glass, o famoso óculos 'smart' da gigante da internet. Afinal, o aparelho custa 1500 dólares e há poucos incentivos para desenvolvedores (como anúncios não são permitidos no gadget, é mais díficl ter lucro com um app). Mesmo assim, recentemente, foi apresentado o "Winky".
+             Seu nome, que significa 'piscadela' em inglês, já dá uma pista sobre sua utilidade: ele permite que você tire fotos através do Google Glass com um piscar de olhos - literalmente.
+             De acordo com seu desenvolvedor, Mike DiGiovanni, muitos usuários podem questionar a necessidade do Winky - afinal, na configuração original do Google Glass, tudo o que você precisa fazer para registrar uma imagem é dizer "Ok, Glass, take a picture", ou apertar um botão. Mas o conceito por trás do app é registrar momentos únicos, que acontecem rapidamente e que podem se perder até o usuário completar uma frase ou apertar um botão.
+             "Em um dia, eu tirei a mesma quantidade de fotos que eu tiraria em 5 dias. Claro que muitas delas são bobas, mas agora a minha timeline é uma representação de onde eu estive e do que eu vi", conta DiGiovanni em sua conta no Google+.
+             O código do app está disponível aqui. E também é possível ver aqui um vídeo de demonstração com uma foto resultante. Qual é sua opinião sobre a facilidade de tirar fotos com uma piscadela? Você acha que a invenção irá diminuir, ainda mais, a privacidade das pessoas? Deixe sua opinião nos comentários.</p>
+            <ul id="album-fotos">
+                <li id="foto01"><span>Agenda e lembretes</span></li>
+                <li id="foto02"><span>Sergey Brin usando o Glass</span></li>
+                <li id="foto03"><span>Leve e compacto</span></li>
+                <li id="foto04"><span>Sensação de uma tela de 50"</span> </li>
+                <li id="foto05"><span>Vários tipos de lentes</span></li>
+                <li id="foto06"><span>Informações importantes</span></li>
+            </ul>
+            </article>
+        </section>   
+       
+        <footer id="rodape">
+            <p>Copyright 2021 &copy; - by Edlein Chaves <br/>
+                <a href="https://www.facebook.com/edlein.chavesdejesus" target="_blank">Facebook</a>| <a href="https://www.linkedin.com/in/edlein-chaves-de-jesus-285322134/" target="_blank">Linkedln</a></p>
+        </footer>    
+    </div>
+    <script src="./_javascript/script.js"></script>
+    </body>
+    </html>

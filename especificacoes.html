@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Glass</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/especs.css" />
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+        <hgroup>
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando.</h2>
+        </hgroup> 
+         <img id="icone" src="./img/especificacoes.png" alt="Especificações do Google Glass">  
+        
+        <nav id="menu">
+            <h1> Menu Principal</h1>
+            <ul type="disc"> 
+                <li onmouseover="mudaFoto('./img/home.png')" onmouseout="mudaFoto('./img/especificacoes.png')"><a href="./index.html">Home</a></li>
+                <li onmouseover="mudaFoto('./img/especificacoes.png')" onmouseout="mudaFoto('./img/especificacoes.png')"><a href="./especificacoes.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('./img/camera.png')" onmouseout="mudaFoto('./img/especificacoes.png')"><a href="./fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('./img/midia.png')" onmouseout="mudaFoto('./img/especificacoes.png')"><a href="./multimidias.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('./img/fale.png')" onmouseout="mudaFoto('./img/especificacoes.png')"><a href="./contato.html">Fale Conosco</a></li>
+            </ul> 
+        </nav>    
+        </header>
+        <section id="corpo-full"> 
+            <article id="noticia-principal">  
+              <header id="cabecalho-artigo">
+                  <hgroup>
+                      <h3> Glass > &nbsp; Especificações</h3>
+                      <h1> Raio X mostra as entranhas do Google Glass.</h1>
+                      <h2> Por Edlein Chaves </h2>
+                      <h3 class="dir"> Atualizado em 06/12/2021</h3>
+                  </hgroup>
+              </header> 
+             <p>O Google Glass já foi desmontado, estudado e até mesmo foi tomar um banho, mas esta é a primeira vez que os óculos inteligentes vão para uma máquina de raio x. Um usuário do Google+ postou diversas fotos que mostram as entranhas no interior do dispositivo, criando imagens interessantes de olhar e apreciar.</p>
+             <section id="conteudo"> 
+                <img src="./img/tela-googleglass.png" usemap="#meumapa">
+                
+                <map name="meumapa">
+                    <area shape="rect" coords="160,175,125,95" href="google-glass.html#tela" target="janela">
+                    <area shape="circle" coords="89,134,15" href="google-glass.html#camera" target="janela">
+                    <area shape="circle" coords="46,30, 15" href="google-glass.html#memoria" target="janela">
+                    <area shape="poly" coords="19,90,49,132,49,150,17,99,14,98" href="google-glass.html#sensores" target="janela">
+                </map>
+                <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+             </section>    
+            </article>
+        </section>   
+    <footer id="rodape">
+        <p>Copyright 2021 &copy; - by Edlein Chaves <br/>
+            <a href="https://www.facebook.com/edlein.chavesdejesus" target="_blank">Facebook</a>| <a href="https://www.linkedin.com/in/edlein-chaves-de-jesus-285322134/" target="_blank">Linkedln</a></p>
+    </footer>    
+</div>
+<script src="./_javascript/script.js"></script>
+</body>
+</html>

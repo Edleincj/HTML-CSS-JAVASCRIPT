@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Glass</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+        <hgroup>
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando.</h2>
+        </hgroup> 
+         <img id="icone" src="./img/oculos-preto.png" alt="Óculos Google Glass">  
+        
+        <nav id="menu">
+            <h1> Menu Principal</h1>
+            <ul type="disc"> 
+                <li onmouseover="mudaFoto('./img/home.png')" onmouseout="mudaFoto('./img/oculos-preto.png')"><a href="./index.html">Home</a></li>
+                <li onmouseover="mudaFoto('./img/especificacoes.png')" onmouseout="mudaFoto('./img/oculos-preto.png')"><a href="./especificacoes.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('./img/camera.png')" onmouseout="mudaFoto('./img/oculos-preto.png')"><a href="./fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('./img/midia.png')" onmouseout="mudaFoto('./img/oculos-preto.png')"><a href="./multimidias.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('./img/fale.png')" onmouseout="mudaFoto('./img/oculos-preto.png')"><a href="./contato.html">Fale Conosco</a></li>
+            </ul> 
+        </nav>    
+        </header>
+        <section id="corpo"> 
+          <article id="noticia-principal">  
+            <header id="cabecalho-artigo">
+                <hgroup>
+                    <h3> Tecnologia > &nbsp; Inovações</h3>
+                    <h1> Saiba tudo sobre Google Glass.</h1>
+                    <h2> Por Edlein Chaves </h2>
+                    <h3 class="dir"> Atualizado em 01/12/2021</h3>
+                </hgroup>
+            </header>
+            <h2>O que é</h2>
+            <p>O <b>Google Glass</b> é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. 
+            Também chamado de <a href="http://glass.google.com" target="_blank">Project Glass</a>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeoconferências.</p> 
+
+            <figure class="foto-legenda">
+                <img src="./img/homemmulher.png" alt="Tudo sobre Google Glass">
+                <figcaption>
+                    <h3>Google Glass</h3>
+                    <p>Uma nova maneira de ver o mundo</p>
+                </figcaption>
+            </figure>
+            <h2>Data do lançamento</h2>
+            <p>Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. 
+                Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
+     
+            <h2>Especificações Técnicas</h2>
+            <table id="tabelaspec">    
+            <caption>Tabela Técnica do Google Glass <span>Mar/2013</span></caption>
+                
+                <tr><td class="ce">Tela</td><td class="cd">Resolução equivalente a tela de 25"</td></tr>
+                <tr><td rowspan="2" class="ce">Camera</td><td class="cd"> 5MP para fotos</td></tr>
+                <tr><td  class="cd">720p para vídeoconferências</td></tr>
+                <tr><td rowspan="2" class="ce">Conectividade</td><td class="cd">Wi-fi</td></tr>
+                <tr><td  class="cd">Bluetooth</td></tr>
+                <tr><td class="ce">Memória Interna</td><td  class="cd">12GB</td></tr>
+            </table>
+
+            <h2>Como funciona</h2>
+            <p>Nesse sentido, o Google Glass funciona da seguinte forma: é um óculos que age por comandos de voz ou toque no botão lateral. É como um óculos de grau comum, mas com múltiplas funções. Dessa maneira, ele possui também Wi-fi, conexão 3G, bluetooth, GPS e câmera.
+                Além disso, ele é projetado para enviar comandos diretamente no nosso crânio, a medida em que fica apoiado atrás da orelha (como um óculos comum). Mas não possui fone de ouvido e não é possível de ser utilizado para ouvir música.</p>
+
+            <h2>O que pode fazer com o Google Glass</h2>
+            <p>Tirar fotos: o Google Glass possui uma câmera com 720p de resolução, para fotos e vídeos de alta definição.
+                Fazer videoconferências.
+                Receber notificação de eventos e reuniões.
+                Acessar e-mails.
+                Acessar a busca do Google e o Google Tradutor instantaneamente.
+                Visualizar o Google Maps.
+            </p>
+
+            [vídeo]
+          </article>  
+        </section>
+
+        <aside id="lateral">
+            <h1>Outras Novidades</h1>
+            <h2>Vídeos mais recentes</h2>
+            [video]
+
+            <h2>Novidade do Google Glass</h2>
+            <p>O site Android Police reporta que os óculos inteligentes do Google agora podem exibir ao usuário um cursor caso um mouse esteja conectado a ele. 
+                O aplicativo MyGlass ganhou suporte para a central de notificações dos smartphones Android. Com isso, você pode ver as novidades dos seus apps diretamente nos óculos.</p>
+        </aside> 
+
+        <footer id="rodape">
+            <p>Copyright 2021 &copy; - by Edlein Chaves <br/>
+                <a href="https://www.facebook.com/edlein.chavesdejesus" target="_blank">Facebook</a>| <a href="https://www.linkedin.com/in/edlein-chaves-de-jesus-285322134/" target="_blank">Linkedln</a></p>
+        </footer>    
+    </div>
+    <script src="./_javascript/script.js"></script>
+</body>
+</html>

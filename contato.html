@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/contato.css" />
+
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+        <hgroup>
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando.</h2>
+        </hgroup> 
+         <img id="icone" src="./img/fale.png" alt="Contato do Google Glass">  
+        
+        <nav id="menu">
+            <h1> Menu Principal</h1>
+            <ul type="disc"> 
+                <li onmouseover="mudaFoto('./img/home.png')" onmouseout="mudaFoto('./img/fale.png')"><a href="./index.html">Home</a></li>
+                <li onmouseover="mudaFoto('./img/especificacoes.png')" onmouseout="mudaFoto('./img/fale.png')"><a href="./especificacoes.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('./img/camera.png')" onmouseout="mudaFoto('./img/fale.png')"><a href="./fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('./img/midia.png')" onmouseout="mudaFoto('./img/fale.png')"><a href="./multimidias.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('./img/fale.png')" onmouseout="mudaFoto('./img/fale.png')"><a href="./contato.html">Fale Conosco</a></li>
+            </ul> 
+        </nav>    
+        </header>
+    <section id="corpo-full"> 
+        <article id="noticia-principal">  
+          <header id="cabecalho-artigo">
+              <hgroup>
+                  <h3> Glass > &nbsp; Fale Conosco</h3>
+                  <h1> Deixe aqui suas dúvidas ou aquisições do Google Glass</h1>
+                  <h2> Por Edlein Chaves </h2>
+                  <h3 class="dir"> Atualizado em 06/12/2021</h3>
+              </hgroup>
+          </header> 
+          <form method="post" id="fContato" action="mailto:edleincj@yahoo.com.br">
+              <fieldset id="usuario">
+               <legend>Identificação de usuário</legend>
+                    <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlangth="30" placeholder="Nome Completo"></p>
+                    <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlangth="8" placeholder="8 dígitos"></p>
+                    <p><label for="cEmail">E-mail:</label><input type="email" name="tEmail" id="cEmail" size="20" maxlangth="40" placeholder="Digite seu email aqui"></p>
+                   <fieldset id="sexo"> 
+                      <legend>Sexo</legend>
+                       <input type="radio" name="tSexo" id="cMasc"><label for="cMasc">Masculino</label><br/>
+                       <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+                    </fieldset>    
+                    <p>Data de nascimento:<input type="date" name="tNasc" id="cNasc"><label for="cNasc"></label></p>
+              </fieldset>
+
+            <fieldset id="endereco">    
+               <legend>Endereço do usuário</legend>
+               <p><label for="cEnd">Logradouro:</label><input type="text" name="tEnd" id="cEnd" size="13" maxlangth="80" placeholder="Rua, Av, Trav, Rod"></p>
+                <p><label for="cNum">Número:</label><input type="number" name="tNum" id="cNum" min="0" max="99999"></p>
+               <p><label for="cEst">Estado:</label><select name="tEst" id="cEst">
+               <optgroup label="Região Sudeste">
+                <option value="RJ">Rio de Janeiro</option>
+               <option value="SP">São Paulo</option>
+               <option value="MG">Minas Gerais</option>
+               </optgroup>
+
+               <optgroup label="Região Sul">
+               <option value="PR">Paraná</option>
+               <option value="SC">Santa Catarina</option>
+               <option value="RS">Rio Grande do Sul</option>
+               </optgroup>
+               </select></p>
+               <p><label for="cCid">Cidade:</label><input type="text" name="tCid" id="cCid" size="30" maxlangth="60" placeholder="Nome da cidade" list="cidade"></p>
+               <datalist id="cidade">
+                   <option value="Rio de Janeiro"></option>
+                   <option value="Nova Iguaçú"></option>
+                   <option value="Belford Roxo"></option>
+               </datalist>
+            </fieldset>
+
+            <fieldset id="mensagem">
+                <legend>Mensagem do usuário</legend>
+                <p><label for="cUrg">Grau de urgência:</label>Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Máx</p>
+                <p><label for="cMsg">Mensagem:</label><textarea name="tMsg" id="cMsg" cols="45" rows="10" placeholder="Digite aqui sua mensagem"> </textarea></p>
+            </fieldset>
+
+            <fieldset id="pedido">
+               <legend>Quero um Google Glass</legend>
+               <p><label for="cPed">Gostaria de adiquirir um Google Glass quando disponível:</label></p>
+               <p><input type="radio" name="tPed" id="cSim"><label for="cSim">Sim</label><br></p>
+               <p><input type="radio" name="tPed" id="cNao"><label for="cNao">Não</label></p>
+
+               <p><label for="cCor">Cor:</label><input type="color" name="tCor" id="cCor"></p>
+               <p><label for="cQtd">Quantidade:</label><input type="number" name="tQtd" id="cQtd" min="0" max="9999"></p>
+               <p><label for="cTot">Preço Total: R$</label><input type="number" format="currency" precision="2" name="tTot" id="cTot" placeholder="00.00" min="0" step="0.01"></p>
+            </fieldset>  
+            <button type="submit">Enviar</button>
+
+            </form>  
+        </article>
+    </section>   
+<footer id="rodape">
+    <p>Copyright 2021 &copy; - by Edlein Chaves <br/>
+        <a href="https://www.facebook.com/edlein.chavesdejesus" target="_blank">Facebook</a>| <a href="https://www.linkedin.com/in/edlein-chaves-de-jesus-285322134/" target="_blank">Linkedln</a></p>
+</footer>    
+</div>
+<script src="./_javascript/script.js"></script>
+
+</body>
+</html>
